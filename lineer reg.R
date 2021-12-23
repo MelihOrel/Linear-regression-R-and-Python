@@ -63,7 +63,7 @@ index <- createDataPartition(df$price,p=0.70,list = F)
 train <- df[index,]
 
 ## Testing Data
-test <- df[index,]
+test <- df[-index,]
 
 
 #Model Building
