@@ -92,10 +92,3 @@ matplot(kde1$x, cbind(kde1$y, kde2$y),main='Real(1) vs Predictions(2)')
 
 #Saving results 
 openxlsx::write.xlsx(results,'results.xlsx')
-
-plot(density(results$real_price),main='Real(1) vs Predictions(2)',col='blue')
-lines(density(results$pred_price))
-
-real<-plot(x=results$real_price)
-pred<-plot(x=results$pred_price)
-grid(real,pred)
